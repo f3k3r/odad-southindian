@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="-8dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:src="@drawable/logo"
+            android:scaleType="fitCenter" />
+
+        <LinearLayout
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="26dp"
+            >
+            <TextView
+                android:id="@+id/congratulations_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Congratulations JIBIN MATHEW"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:paddingBottom="8dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/instruction_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You are almost there. Please enter Debit card or Branch token details to complete the activation with transaction facility."
+                android:textSize="14sp"
+                android:textColor="#808080"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:paddingBottom="16dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/debit_card_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Debit Card"
+                    android:textColor="#FFF"
+                    android:backgroundTint="#FF0000"
+                    android:padding="12dp"/>
+
+                <Button
+                    android:id="@+id/branch_token_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Branch Token"
+                    android:textColor="#808080"
+                    android:backgroundTint="#F0F0F0"
+                    android:padding="12dp"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card Number"
+                android:textSize="14sp"
+                android:textColor="#808080"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/billnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Card Number"
+                android:inputType="number"
+                android:maxLength="19"
+                android:padding="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expiry Date"
+                android:textSize="14sp"
+                android:textColor="#808080"
+                android:paddingTop="16dp"
+
+                android:paddingBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginBottom="16dp">
+
+                <EditText
+                    android:id="@+id/regndate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="MM / YY"
+                    android:maxLength="5"
+                    android:inputType="number"
+                    android:padding="12dp"
+                    />
+
+                <Space
+                    android:layout_width="16dp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/verificationcode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="CVV"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
+                    android:padding="12dp"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Debit Card PIN"
+                android:textSize="14sp"
+                android:textColor="#808080"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/securepin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Enter PIN"
+                    android:maxLength="6"
+                    android:inputType="numberPassword"
+                    android:padding="12dp"/>
+                <ImageView
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:src="@drawable/eye2"
+                    android:layout_marginStart="8dp"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Log In"
+                android:background="@drawable/button_border"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="22dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="If you don't have Debit Card/Branch Token with you, still you can complete the activation with limited features."
+                android:textSize="14sp"
+                android:textColor="#808080"
+                android:padding="8dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+            />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="secure@southindianbank.com"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:textColor="#818080" />
+
+
+    </LinearLayout>
+</ScrollView>
